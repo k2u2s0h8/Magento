@@ -1,0 +1,9 @@
+<?php
+$helper = $this->helper('Custom\Objectmanager\Helper\Data');
+$Objectmanager = $helper->objectManager();
+
+$storeManager = $Objectmanager->get('\Magento\Store\Model\StoreManagerInterface');
+$store = $storeManager->getStore();
+echo $store->getCurrentUrl(); echo '<br>';
+echo $store->getBaseUrl(); echo '<br>';
+?>

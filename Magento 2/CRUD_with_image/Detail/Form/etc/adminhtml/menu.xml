@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Detail. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Detail_Form::detail_admingrid_index" title="Detail Form" module="Detail_Form"  sortOrder="20" dependsOnModule="Detail_Form" action="form/admingrid/index" resource="Detail_Form::detail_admingrid_index"/>
+<!--AddMenu-->
+    </menu>
+</config>

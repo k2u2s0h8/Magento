@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+     <update handle="editor"/>
+    <body>
+	   <referenceContainer name="content">
+            <block class="Detail\Form\Block\Adminhtml\Form\Edit" name="form_form_edit"/>
+        </referenceContainer>
+		 <referenceContainer name="left">
+            <block class="Detail\Form\Block\Adminhtml\Form\Edit\Tabs" name="form_form_edit_tabs">
+				<block class="Detail\Form\Block\Adminhtml\Form\Edit\Tab\FormDetail" name="form_form_edit_tab_formdetail"/>
+				 <action method="addTab">
+                    <argument name="name" xsi:type="string">formdetail_section</argument>
+                    <argument name="block" xsi:type="string">form_form_edit_tab_formdetail</argument>
+                </action>
+				<!--CedAddTab-->
+			</block>
+        </referenceContainer>
+    </body>
+</page>
